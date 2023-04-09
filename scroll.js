@@ -7,7 +7,7 @@ ScrollReveal({
 
 ScrollReveal().reveal('.home-content, .heading', { origin: 'top' });
 
-ScrollReveal().reveal('.home-image, .services-container, .portfolio-box, .contact form', { origin: 'bottom' });
+ScrollReveal().reveal('.home-image, .services-container, .portfolio-box, .contact form, .skills-container', { origin: 'bottom' });
 
 
 ScrollReveal().reveal('.home-content h1, .about-image', { origin: 'left' });

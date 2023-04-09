@@ -7,8 +7,53 @@
     <title>Abdulah Bashir</title>
     <link rel="stylesheet" href="style.css">
     <link href='https://unpkg.com/boxicons@2.1.4/css/boxicons.min.css' rel='stylesheet'>
+    
+    <style>
+        .loader{
+            position: fixed;
+            top: 0; left: 0;
+            width: 100vw;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            /* background: #f7f9fb; */
+            background: rgba(0, 0, 0, 1.1);
+            transition: opacity 2s, visibility 2s;
+            z-index: 100;
+        }
+
+        .loader-hidden{
+            opacity: 0;
+            visibility: hidden;
+            transition: all 3s ease-in-out;
+        }
+
+        .loader::after{
+            content: "";
+            width: 75px;
+            height: 75px;
+            border: 15px solid #ddd;
+             border-top-color: #0ef;
+            border-radius: 50%;
+            animation: loading 0.75s ease infinite;
+        }
+
+        @keyframes loading {
+            from{
+                transform: rotate(0turn);
+            }
+            to{
+                transform: rotate(1turn);
+            }
+        }
+    </style>
 </head>
 <body>
+
+
+    <!-- LOADER -->
+    <div class="loader"></div>
 
     <!-- Header -->
     <header class="header">
@@ -33,9 +78,9 @@
             <h3 class="second">A <span class="typing"></span></h3>
             <p>Lorem ipsum, dolor sit amet consectetur adipisicing elit. Maiores quis optio dolores tenetur voluptatum consequatur?</p>
             <div class="social-media">
-                <a href=""><i class='bx bxl-twitter'></i></a>
-                <a href=""><i class='bx bxl-linkedin-square'></i></a>
-                <a href=""><i class='bx bxl-github' ></i></a>
+                <a href="https://twitter.com/Bash_Abdul_"><i class='bx bxl-twitter'></i></a>
+                <a href="https://www.linkedin.com/in/bashir-abdulah-b17b3125a/"><i class='bx bxl-linkedin-square'></i></a>
+                <a href="https://github.com/Bash-Abdul"><i class='bx bxl-github' ></i></a>
                 <a href=""><i class='bx bxl-whatsapp' ></i></a>
             </div>
 
@@ -50,15 +95,77 @@
     <!-- ABOUT SECTION -->
     <section class="about" id="about">
         <div class="about-image">
-            <img src="img/me.png" alt="">
+            <img src="img/33.webp" alt="">
         </div>
 
         <div class="about-content">
             <h2 class="heading">About <span>Me</span></h2>
-            <h3>Frontend Developer</h3>
+            <!-- <h3>Frontend Developer</h3> -->
             <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit. Soluta aperiam at modi reiciendis deleniti ex cumque odit facilis assumenda voluptatum, iste quae sapiente voluptates consequuntur inventore voluptate natus error quam eos illum veniam. Fugit ullam saepe commodi culpa maxime ea.</p>
+
+
+            <div class="info">
+                <i class='bx bxs-phone' ></i>
+                <h4>+234-8109486471</h4>
+            </div>
+            <div class="info">
+                <i class='bx bxl-gmail' ></i>
+                <a href="#"><h4>bashirtaiw059@gmail.com</h4></a>
+            </div>
             <a href="#" class="btn">Read More</a>
         </div>
+    </section>
+
+
+
+    <!-- SKILSS SECTION -->
+    <section class="skills" id="skills">
+        <h2 class="heading">Our <span>Skills</span></h2>
+
+         <div class="skills-container">
+            <div class="bars">
+
+                <div class="bars-box">
+                    <h3>TailwindCss</h3>
+                    <span>95%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar tail-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>CSS</h3>
+                    <span>85%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar css-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>Javascript</h3>
+                    <span>75%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar js-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>React</h3>
+                    <span>85%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar react-bar"></div>
+                </div>
+
+                <div class="bars-box">
+                    <h3>Github</h3>
+                    <span>85%</span>
+                    <div class="light-bar"></div>
+                    <div class="percent-bar git-bar"></div>
+                </div>
+
+            </div>
+
+            <div class="skills-image">
+                <img src="img/skill.jpg" alt="">
+            </div>
+         </div>
     </section>
 
     <!-- SERVICES SECTION -->
@@ -98,11 +205,11 @@
                 <img src="img/easy.png" alt="">
 
                 <div class="portfolio-content">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel.</p>
+                    <h4>Easy Bank</h4>
+                    <p>Frontend Mentor challenge made using tailwindCss and Javascript</p>
                     <div class="links">
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-                        <a href="#"><i class='bx bxl-github' ></i></a>
+                        <a href="https://easy-bank-bash-abdul.vercel.app/"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/Bash-Abdul/easy_bank"><i class='bx bxl-github' ></i></a>
                     </div>
                 </div>
             </div>
@@ -111,11 +218,11 @@
                 <img src="img/fit-first.png" alt="">
 
                 <div class="portfolio-content">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel.</p>
+                    <h4>Fit-First</h4>
+                    <p>Fit Gym Website made using Html, Css and Javascript</p>
                     <div class="links">
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-                        <a href="#"><i class='bx bxl-github' ></i></a>
+                        <a href="https://fit-first-gym.vercel.app/"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/Bash-Abdul/Fit-First-Gym"><i class='bx bxl-github' ></i></a>
                     </div>
                 </div>
             </div>
@@ -124,11 +231,11 @@
                 <img src="img/netflix-clone.png" alt="">
 
                 <div class="portfolio-content">
-                    <h4>Web Design</h4>
-                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel.</p>
+                    <h4>Netflix clone</h4>
+                    <p>Cloned Netflix site made with Html, Css and Javascript with a test on scroll animation</p>
                     <div class="links">
-                        <a href="#"><i class='bx bx-link-external' ></i></a>
-                        <a href="#"><i class='bx bxl-github' ></i></a>
+                        <a href="https://netflix-copied.netlify.app"><i class='bx bx-link-external' ></i></a>
+                        <a href="https://github.com/Bash-Abdul/Netflix-clone"><i class='bx bxl-github' ></i></a>
                     </div>
                 </div>
             </div>
@@ -152,7 +259,7 @@
                 <img src="img/fintekk.png" alt="">
 
                 <div class="portfolio-content">
-                    <h4>Web Design</h4>
+                    <h4>Fintekk</h4>
                     <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates, vel.</p>
                     <div class="links">
                         <a href="#"><i class='bx bx-link-external' ></i></a>
@@ -180,6 +287,8 @@
     <!-- CONTACT SECTION -->
     <section class="contact" id="contact">
         <h2 class="heading">Contact <span>Me!</span></h2>
+
+
 
         <form action="#">
             <div class="input-box">

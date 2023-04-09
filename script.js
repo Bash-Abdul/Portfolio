@@ -1,3 +1,15 @@
+window.addEventListener('load',()=>{
+    const load = document.querySelector('.loader');
+
+    load.classList.add('loader-hidden');
+
+    load.addEventListener('transitionend', ()=>{
+        document.body.removeChild('loader');
+    })
+})
+
+
+
 // RESPONSIVE NAV
 let menu = document.querySelector('#menu')
 let navbar = document.querySelector('.navbar')
