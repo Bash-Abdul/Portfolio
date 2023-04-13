@@ -117,7 +117,8 @@ section{
 
 .home-content h2{
     font-size: 3rem;
-    margin: 2rem 0;
+    margin: 3rem 0 2rem;
+    font-style: italic;
 }
 .home-content h2 span{
     color: var(--main-color);
@@ -213,6 +214,7 @@ section{
     font-size: 1.6rem;
     line-height: 1.5;
     padding: 2rem 0 3rem;
+    font-weight: 700;
 }
 
 .info{
