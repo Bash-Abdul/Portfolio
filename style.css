@@ -350,7 +350,7 @@ section{
 }
 
 .services-container .service-box{
-    flex: 1 1 15rem;
+    flex: 1 1 30rem;
     /* background: var(--bg-second-color); */
     background: var(--bg-color);
     padding: 2rem 3rem 2rem;
