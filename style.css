@@ -264,8 +264,28 @@ section{
 }
 
 
+.bars{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 3rem;
+    line-height: 1.5;
+}
 
 .bars-box{
+    display: flex;
+    align-items: center;
+    gap: .5rem;
+}
+.bars-box i{
+    font-size: 2.2rem;
+    color: var(--main-color);
+}
+.bars-box h2{
+    font-size: 2.5rem;
+}
+
+
+/* .bars-box{
     position: relative;
     display: flex;
     justify-content: space-between;
@@ -283,7 +303,6 @@ section{
     left: 0;
     width: 100%;
     height: 0.6rem;
-    /* background: hsla(260, 100%,44%,0.4); */
     background: var(--main-color);
     border-radius: 0.5rem;
 }
@@ -291,7 +310,6 @@ section{
     position: absolute;
     bottom: 0;left: 0;
     height: 0.6rem;
-    /* width: 40%; */
     background: var(--text-color);
     border-radius: 0.5rem;
     z-index: 100;
@@ -313,7 +331,7 @@ section{
 }
 .flutter{
     width: 50%;
-}
+} */
 /* SERVICES */
 
 .services h2{
@@ -332,13 +350,14 @@ section{
 }
 
 .services-container .service-box{
-    flex: 1 1 30rem;
+    flex: 1 1 15rem;
     /* background: var(--bg-second-color); */
     background: var(--bg-color);
-    padding: 3rem 2rem 4rem;
-    text-align: center;
+    padding: 2rem 3rem 2rem;
+    /* text-align: center; */
     border-radius: 2rem;
     border: .2rem solid var(--bg-second-color);
+    /* height: 28rem; */
 }
 
 .services-container .service-box:hover{
@@ -356,7 +375,7 @@ section{
 }
 
 .service-box p{
-    font-size: 1.6rem;
+    font-size: 1.4rem;
     margin: 1rem 0 3rem;
 }
 
