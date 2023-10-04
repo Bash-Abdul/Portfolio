@@ -13,3 +13,5 @@ ScrollReveal().reveal('.home-image, .services-container, .portfolio-box, .contac
 ScrollReveal().reveal('.home-content h1, .about-image, .lead', { origin: 'left' });
 
 ScrollReveal().reveal('.home-content p, .about-content', { origin: 'right' });
+
+ScrollReveal().reveal('')

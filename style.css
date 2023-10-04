@@ -259,10 +259,9 @@ section{
 }
 
 .skills-image img{
-    width: 30vw;
+     width: 28vw;
     /* border-radius: 50%; */
 }
-
 
 .bars{
     display: grid;
@@ -341,16 +340,19 @@ section{
 
 
 .services-container{
-    display: flex;
+    /* display: flex;
     align-items: center;
     justify-content: center;
-    flex-wrap: wrap;
+    flex-wrap: wrap; */
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(35rem, 1fr));
+    align-items: center;
     gap: 3rem;
     margin-top: 2rem;
 }
 
 .services-container .service-box{
-    flex: 1 1 30rem;
+    /* flex: 1 1 30rem; */
     /* background: var(--bg-second-color); */
     background: var(--bg-color);
     padding: 2rem 3rem 2rem;
