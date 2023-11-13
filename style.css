@@ -405,7 +405,7 @@ section{
 
 .portfolio-container .portfolio-box{
     position: relative;
-    border-radius: 1rem;
+    border-radius: .5rem;
     box-shadow: 0 0 1rem var(--bg-color);
     overflow: hidden;
     display: flex;
@@ -530,7 +530,8 @@ section{
     width: 100%;
     padding: 1.5rem;
     font-size: 1.6rem;
-    color: var(--text-color);background: var(--bg-second-color);
+    color: var(--text-color);
+    background: var(--bg-second-color);
     border-radius: .8rem;
     margin: .7rem 0;
 }
@@ -630,7 +631,7 @@ section{
         padding: 1rem 3%;
         background: var(--bg-color);
         border-top: .1rem solid rgba(0,0,0,.2);
-        box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
+         box-shadow: 0 .5rem 1rem rgba(0,0,0,.2);
         flex-direction: column;
         align-items: start;
         gap: .5rem;
@@ -739,7 +740,8 @@ section{
     }
 
     .footer p{
-        text-align: center;
+        /* text-align: center; */
+        justify-content: center;
         margin-top: 2rem;
     }
 }
