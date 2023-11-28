@@ -618,6 +618,7 @@ section{
 
 
 @media (max-width:768px) {
+   
     #menu{
         display: block;
         cursor: pointer;
